@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #34495e, #95a5a6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #2c3e50;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  color: #7f8c8d;
+}
+
+.toggles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.toggles button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #bdc3c7;
+  color: #2c3e50;
+  transition: background 0.3s;
+}
+
+.toggles button:hover {
+  background: #95a5a6;
+}
+
+.calculator label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.calculator input[type="number"],
+.calculator input[type="range"] {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.range-container {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.range-container span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #444;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #2980b9;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1f6391;
+}
+
+#downloadBtn {
+  margin-top: 10px;
+  background: #27ae60;
+}
+
+#downloadBtn:hover {
+  background: #1e8449;
+}
+
+#refreshBtn {
+  margin-top: 10px;
+  background: #e74c3c;
+}
+
+#refreshBtn:hover {
+  background: #c0392b;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Dark mode */
+body.dark {
+  background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
+  color: #f0f0f0;
+}
+
+body.dark .calculator-container {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark h1, body.dark .subtitle, body.dark label, body.dark #result {
+  color: #f0f0f0;
+}
+
+body.dark button {
+  background: #444;
+  color: #f0f0f0;
+}
+
+body.dark button:hover {
+  background: #666;
+  }
