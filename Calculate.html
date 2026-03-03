@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dave plc Pricing Calculator</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <h1 id="businessName">Dave plc</h1>
+    <p class="subtitle" id="tagline">Tailored solutions at fingertips</p>
+
+    <!-- Toggles -->
+    <div class="toggles">
+      <button id="darkModeBtn">🌙 Dark Mode</button>
+      <button id="langBtn">🇬🇧 English / አማርኛ</button>
+    </div>
+
+    <div class="calculator">
+      <!-- Consulting Hours -->
+      <label id="product1Label">💼 Consulting Hours</label>
+      <input type="number" id="product1Qty" min="0" value="0">
+      <div class="range-container">
+        <label>Rate</label>
+        <input type="range" id="product1Rate" min="10" max="20" value="15">
+        <span id="product1RateValue">$15/hr</span>
+      </div>
+
+      <!-- Reports -->
+      <label id="product2Label">📊 Reports</label>
+      <input type="number" id="product2Qty" min="0" value="0">
+      <div class="range-container">
+        <label>Rate</label>
+        <input type="range" id="product2Rate" min="20" max="25" value="22">
+        <span id="product2RateValue">$22 each</span>
+      </div>
+
+      <!-- Subscriptions -->
+      <label id="product3Label">🔑 Subscriptions</label>
+      <input type="number" id="product3Qty" min="0" value="0">
+      <div class="range-container">
+        <label>Rate</label>
+        <input type="range" id="product3Rate" min="30" max="35" value="32">
+        <span id="product3RateValue">$32 each</span>
+      </div>
+
+      <!-- Training Sessions -->
+      <label id="product4Label">🎓 Training Sessions</label>
+      <input type="number" id="product4Qty" min="0" value="0">
+      <div class="range-container">
+        <label>Rate</label>
+        <input type="range" id="product4Rate" min="50" max="100" value="75">
+        <span id="product4RateValue">$75/session</span>
+      </div>
+
+      <!-- Support Packages -->
+      <label id="product5Label">🛠️ Support Packages</label>
+      <input type="number" id="product5Qty" min="0" value="0">
+      <div class="range-container">
+        <label>Rate</label>
+        <input type="range" id="product5Rate" min="100" max="200" value="150">
+        <span id="product5RateValue">$150/package</span>
+      </div>
+
+      <!-- Licensing -->
+      <label id="product6Label">📜 Licensing</label>
+      <input type="number" id="product6Qty" min="0" value="0">
+      <div class="range-container">
+        <label>Rate</label>
+        <input type="range" id="product6Rate" min="200" max="400" value="300">
+        <span id="product6RateValue">$300/license</span>
+      </div>
+
+      <button id="calculateBtn">Calculate Total</button>
+      <div id="result"></div>
+
+      <button id="downloadBtn">Download/Print Quote</button>
+      <button id="refreshBtn">Reset Calculator</button>
+    </div>
+  </div>
+
+  <script src="/Calculate2.js"></script>
+</body>
+        </html>
